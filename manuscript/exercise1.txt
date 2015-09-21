@@ -1,0 +1,3 @@
+# Exercise One
+
+Write a Fitness and Clinician App and App Legal Terms.
