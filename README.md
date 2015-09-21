@@ -1,1 +1,3 @@
-See: http://humandynamics.github.io/ComputableLaw
+See: http://ComputableLaw.org
+
+or: http://HumanDynamics.github.io/ComputableLaw
