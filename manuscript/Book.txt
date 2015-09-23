@@ -1,4 +1,4 @@
-chapter1.txt
+IntroAndOverview.txt
 chapter2.txt
 exercise1.txt
 chapter3.txt
@@ -9,6 +9,7 @@ chapter5.txt
 chapter6.txt
 chapter7.txt
 chapter8.txt
-chapter9.txt
+SharingEconomy.txt
+exercise4.txt
 chapter10.txt
 chapter11.txt
