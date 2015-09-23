@@ -1,7 +1,7 @@
 IntroAndOverview.txt
 chapter2.txt
 exercise1.txt
-chapter3.txt
+LegalHacking.txt
 exercise2.txt
 chapter4.txt
 exercise3.txt
