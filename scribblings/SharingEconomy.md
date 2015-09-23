@@ -1,4 +1,4 @@
-# Chapter 11: New Regulatory Paradigms for the Sharing Economy
+# Chapter [N]: New Regulatory Paradigms for the Sharing Economy
 
 [Drafting Note: Below is an initial rough outline with links to draft content]
 
