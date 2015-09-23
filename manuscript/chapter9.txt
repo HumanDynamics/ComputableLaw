@@ -1,0 +1,26 @@
+# Chapter 11: New Regulatory paradigms for the Sharing Economy
+
+This is the canvas for content of chapter.
+
+Define Sharing economy, give sense of scale and growth.
+
+Talk briefly about the three roles in the sharing economy: producer, consumer, and platform. 
+
+Labor
+	The old model is failing
+	Piecework payments?
+	Government APIs?
+
+Liability
+	Diffusion of responsibility
+	Liability insurance and the rising problem of moral hazard.
+	Marketplaces certify safety standards?
+
+Taxation
+	Why the present problem exists
+	Getting marketplaces to report information
+	Internal Revenue Code
+
+Minimum wage of capital?
+
+Computer science solutions
