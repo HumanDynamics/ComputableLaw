@@ -7,6 +7,9 @@ chapter5.txt
 chapter6.txt
 chapter7.txt
 chapter8.txt
+chapter9.txt
+chapter10.txt
+chapter11.txt
 workshop1.txt
 workshop2.txt
 syllabus1.txt
