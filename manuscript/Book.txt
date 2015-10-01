@@ -1,0 +1,15 @@
+IntroAndOverview.txt
+chapter2.txt
+exercise1.txt
+LegalHacking.txt
+exercise2.txt
+chapter4.txt
+exercise3.txt
+chapter5.txt
+chapter6.txt
+chapter7.txt
+chapter8.txt
+SharingEconomy.txt
+exercise4.txt
+chapter10.txt
+chapter11.txt
