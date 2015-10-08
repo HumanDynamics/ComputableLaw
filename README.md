@@ -1,5 +1,5 @@
-## See this forked version of the site here:
-# http://storewell.github.io/ComputableLaw/ 
+# http://storewell.github.io/ComputableLaw
+## See above link for forked version of the site here:
 
 ## See the current official site here:
 * http://ComputableLaw.org
