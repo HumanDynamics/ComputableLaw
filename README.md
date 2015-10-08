@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-See: http://ComputableLaw.org
+## See this forked version of the site here:
+http://storewell.github.io/ComputableLaw/ 
 
-or: http://HumanDynamics.github.io/ComputableLaw
+## See the current official site here:
+* http://ComputableLaw.org
 =======
 # ComputableLaw
 Computable Law Online Materials Resources
-
-See Web Pages at: http://humandynamics.github.io/ComputableLaw
->>>>>>> master
