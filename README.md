@@ -1,9 +1,6 @@
-# http://storewell.github.io/ComputableLaw
-## See above link for forked version of the site here:
+# MIT/Law Event Site Repository
 
-## See the current official site here:
-* http://ComputableLaw.org
-=======
-### Product Designer Repo Fork for:
-* ComputableLaw
-* Computable Law Online Materials Resources
+** An MIT Human Dynamics Lab R&D Project **
+
+* See GitHub Pages Version: http://humandynamics.github.io/ComputableLaw
+* See also: ComputableLaw.org 
