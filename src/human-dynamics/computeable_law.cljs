@@ -207,7 +207,7 @@
 
 (defelem sidebar [attrs elems]
   (elem :pv 40 :gv 50 :ah :center :c black :click #(reset! menu-open false) :o 0.3 attrs
-    (image :sh 100 :m :pointer :url "mit-ml-logo.jpg" :click #(do (reset! menu-open false) (swap! db change-state [init-state])))
+    (image :sh 100 :m :pointer :url "mit-ml-logo.png" :click #(do (reset! menu-open false) (swap! db change-state [init-state])))
     (elem :sh (r 1 1) :sv (- (r 1 1) (+ 110 54 50)) :gv 46 :bc grey-300
       (for-tpl [[ident {:keys [title]}] states]
         (elem :sh (r 1 1) :ph 64 :pv 4 :av :middle :bl 3 :bcl (cell= (if (= ident base) white black)) :f 18 :ff helvetica :ft :800 :fc white :m :pointer :click #(do (reset! menu-open false) (swap! db change-state [@ident]))
