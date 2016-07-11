@@ -2,12 +2,12 @@
   (:page
     "index.html")
   (:refer-clojure
-    :exclude [- name next])
+    :exclude [- name next object])
   (:require
     [clojure.string  :refer [capitalize]]
     [javelin.core    :refer [cell= defc defc= with-let]]
     [hoplon.core     :refer [for-tpl when-tpl case-tpl defelem]]
-    [hoplon.ui       :refer [elem button image toggle form window *scroll*]]
+    [hoplon.ui       :refer [elem button image toggle form frame window *scroll*]]
     [hoplon.ui.elems :refer [in]]
     [hoplon.ui.attrs :refer [- c r s b d]]
     [markdown.core   :refer [md->html]]))
@@ -175,7 +175,9 @@
     (view-body (cell= (:summary  datum)))
     (view-body (cell= (:goals    datum)))
     (view-body (cell= (:outcomes datum)))
-    (view-body (cell= (apply str (interpose "\n" (:resources datum)))))))
+    (view-body (cell= (apply str (interpose "\n" (:resources datum)))))
+    (for-tpl [url (cell= (:videos datum))]
+      (frame :sh (r 1 2) :sv 500 :url url))))
 
 (defn projects-view [state]
   (elem :sh 1200 :p space :g space
