@@ -14,9 +14,11 @@
 
 ;;; constants ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def data-url "http://data.computablelaw.org")
-(def icon-url "https://fonts.googleapis.com/icon?family=Material+Icons")
-(def font-url "https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic")
+(def data-url   "http://data.computablelaw.org")
+(def icon-url   "https://fonts.googleapis.com/icon?family=Material+Icons")
+(def font-url   "https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic")
+
+(def init-state :conference)
 
 ;;; utils ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -68,7 +70,7 @@
   (change-route db [path (not-empty (apply hash-map qargs))]))
 
 (defn initiate [db route status _]
-  (change-route db (if (empty? route) [[:organizers]] route)))
+  (change-route db (if (empty? route) [[init-state]] route)))
 
 ;;; view styles ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -204,11 +206,11 @@
 (defc menu-open false)
 
 (defelem sidebar [attrs elems]
-  (elem :pv 40 :gv 30 :ah :center :c black :click #(reset! menu-open false) :o 0.3 attrs
-    (image :sv 130 :m :pointer :url "mit-ml-logo.jpg" :click #(do (reset! menu-open false) (swap! db change-state [:organizers])))
-    (elem :sh (r 1 1) :sv (- (r 1 1) (+ 130 54 30 30)) :gv 46 :bc grey-300
+  (elem :pv 40 :gv 50 :ah :center :c black :click #(reset! menu-open false) :o 0.3 attrs
+    (image :sh 100 :m :pointer :url "mit-ml-logo.jpg" :click #(do (reset! menu-open false) (swap! db change-state [init-state])))
+    (elem :sh (r 1 1) :sv (- (r 1 1) (+ 110 54 50)) :gv 46 :bc grey-300
       (for-tpl [[ident {:keys [title]}] states]
-        (elem :sh (r 1 1) :ph 40 :pv 4 :av :middle :bl 3 :bcl (cell= (if (= ident base) white black)) :f 18 :ff helvetica :ft :800 :fc white :m :pointer :click #(do (reset! menu-open false) (swap! db change-state [@ident]))
+        (elem :sh (r 1 1) :ph 64 :pv 4 :av :middle :bl 3 :bcl (cell= (if (= ident base) white black)) :f 18 :ff helvetica :ft :800 :fc white :m :pointer :click #(do (reset! menu-open false) (swap! db change-state [@ident]))
           (elem :pt 2 :fx :lowercase
             title))))
     (elem :sh (r 1 1) :ph 36 :ff helvetica :fc white
@@ -222,7 +224,7 @@
       (elem :sh (b (- (r 1 1) (+ 24 130 pad-lg pad-lg)) lg (- (r 1 1) (+ 130 24))) :f 22 :ff helvetica :fx :uppercase :ft :500
         (b app-name sm app-title))
       (elem :g pad-sm :ah :right :av :middle
-        (image :sh 60 :url "kauffman-logo.png" :m :pointer :click #(.open js/window "http://www.kauffman.org/"))))
+        (image :sh 120 :url "kauffman-logo.png" :m :pointer :click #(.open js/window "http://www.kauffman.org/"))))
     (elem :sh (r 1 1) :sv (- (r 1 1) 64) :scroll true
       elems)))
 
